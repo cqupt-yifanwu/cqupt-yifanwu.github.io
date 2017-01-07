@@ -42,10 +42,10 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 720px 960px;
+    -moz-background-size: 720px 960px;
+    -o-background-size: 720px 960px;
+    background-size: 720px 960px;
     background-attachment: fixed;
     content: '';
 }
