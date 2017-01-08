@@ -490,7 +490,6 @@ a {
     }
 }
 
-
 @media screen and (min-width:481px) and (max-width:840px) {
     #scheme-Paradox .index-top-block {
         min-height: 200px!important;
@@ -676,7 +675,8 @@ a {
 #scheme-Paradox .material-layout .something-else .something-else-logo img {
     margin-bottom: 10px;
     width: 10pc;
-    height: 10pc
+    height: 10pc;
+    border-radius: 80px;
 }
 #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
     border-bottom-right-radius: 2px;
