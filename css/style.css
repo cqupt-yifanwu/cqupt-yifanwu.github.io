@@ -1075,6 +1075,8 @@ a {
     color: #616161;
     font-size: 14px;
     resize: inherit
+    width: 90%;
+    margin: 0 auto;
 }
 #scheme-Paradox #comment-button {
     margin-left: 10px;
