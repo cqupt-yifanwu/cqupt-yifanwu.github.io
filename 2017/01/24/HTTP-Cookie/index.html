@@ -10,7 +10,7 @@
     <!-- Title -->
     
     <title>
-        about | jiaoguibin&#39;s blog
+        HTTP-Cookie | jiaoguibin&#39;s blog
     </title>
     
     <!-- Favicons -->
@@ -46,7 +46,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://jiaoguibin.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="about | jiaoguibin&#39;s blog">
+    <meta property="og:title" content="HTTP-Cookie | jiaoguibin&#39;s blog">
     <meta property="og:description" content="hello world">
     
      <!--[if lte IE 9]>
@@ -197,6 +197,33 @@
 				
                 <!-- Post TOC -->
 
+    
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用户识别的技术"><span class="post-toc-number">1.</span> <span class="post-toc-text">用户识别的技术</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于cookie"><span class="post-toc-number">2.</span> <span class="post-toc-text">关于cookie</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cookie的工作流程"><span class="post-toc-number">3.</span> <span class="post-toc-text">cookie的工作流程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cookie的成分与版本"><span class="post-toc-number">4.</span> <span class="post-toc-text">cookie的成分与版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cookie与缓存"><span class="post-toc-number">5.</span> <span class="post-toc-text">cookie与缓存</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cookie-in-javascript"><span class="post-toc-number">6.</span> <span class="post-toc-text">cookie in javascript</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#session、localstorage和sessionstorage与cookie的区别"><span class="post-toc-number">7.</span> <span class="post-toc-text">session、localstorage和sessionstorage与cookie的区别</span></a></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
 
 <!-- Layouts -->
 
@@ -225,7 +252,7 @@
 		
 	
         <p class="article-headline-p">
-            about
+            HTTP-Cookie
         </p>
     </div>
 
@@ -243,7 +270,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Jiaoguibin</strong>
-        <span>1月 08, 2017</span>
+        <span>1月 24, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -285,7 +312,7 @@
 
     <!-- Share Weibo -->
     
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=about&url=http://jiaoguibin.top//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HTTP-Cookie&url=http://jiaoguibin.top//2017/01/24/HTTP-Cookie/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -294,7 +321,7 @@
 
     <!-- Share Twitter -->
     
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=about&url=http://jiaoguibin.top//about/index.html&via=Jiaoguibin" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=HTTP-Cookie&url=http://jiaoguibin.top//2017/01/24/HTTP-Cookie/index.html&via=Jiaoguibin" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
@@ -303,7 +330,7 @@
 
     <!-- Share Facebook -->
     
-    <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://jiaoguibin.top//about/index.html" target="_blank">
+    <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://jiaoguibin.top//2017/01/24/HTTP-Cookie/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Facebook
         </li>
@@ -312,7 +339,7 @@
 
     <!-- Share Google+ -->
     
-    <a class="post_share-link" href="https://plus.google.com/share?url=http://jiaoguibin.top//about/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://jiaoguibin.top//2017/01/24/HTTP-Cookie/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
@@ -336,79 +363,44 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
-		<h3 id="焦贵彬的个人简历"><a href="#焦贵彬的个人简历" class="headerlink" title="焦贵彬的个人简历"></a>焦贵彬的个人简历</h3><ul>
-<li>手机：188-8399-0913</li>
-<li>Email：616584789@qq.com</li>
-<li>QQ: 616584789</li>
-<li>学校/专业：重庆邮电大学/信息管理与商务智能</li>
-<li>GPA：3.22/4</li>
-<li>毕业时间：2018</li>
-<li>个人博客：<a href="http://www.cnblogs.com/nanshanlaoyao/" target="_blank" rel="external">http://www.cnblogs.com/nanshanlaoyao/</a>/<a href="jiaoguibin.top">jiaoguibin.top</a></li>
-<li>github：<a href="https://github.com/cqupt-yifanwu" target="_blank" rel="external">https://github.com/cqupt-yifanwu</a></li>
-<li>期望职位：web前端实习生</li>
-</ul>
-<h3 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h3><ul>
-<li>熟悉HTML/CSS，了解HTML5/CSS3新特性并可以基本应用;</li>
-<li>熟悉javascript，了解ES6新特性;</li>
-<li>熟悉Ajax、JSON、JSONP等前端技术;</li>
-<li>熟悉jquery库并可以熟练应用;</li>
-<li>掌握git常用命令，熟悉webpack、firebug等前端工具;</li>
-<li>了解react，并且对react技术栈有一定的学习;</li>
-<li>了解bootstrap，并可以简单应用;</li>
-<li>了解nodejs，可以完成简单的服务端搭建接口;</li>
-<li>了解基本的前端性能优化方法，有良好的编码习惯;</li>
-</ul>
-<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><ul>
-<li>个人博客/网站（2016.12）<a href="https://github.com/cqupt-yifanwu/blog" target="_blank" rel="external">https://github.com/cqupt-yifanwu/blog</a></li>
-</ul>
-<blockquote>
+		<h3 id="用户识别的技术"><a href="#用户识别的技术" class="headerlink" title="用户识别的技术"></a>用户识别的技术</h3><p>当你访问一个站点时，这个服务器如何来判断这个用户是谁呢？我们可能会第一个想到使用cookie，在写cookie之前，我们先来看看其他几种识别技巧。</p>
 <ul>
-<li>该项目是个人网站，在学习react技术栈的过程中搭建的一个个人博客（单页应用），实现了浏览文章，发布文章，针对文章留言等功能，在此开发此项目中，了解并学习了react栈的相关知识，对前端技术给我们带来的改变感到幸运。<ul>
-<li>使用react构建前端组件</li>
-<li>使用react-router管理路由</li>
-<li>使用nodejs(express4.x)搭建服务端的接口</li>
-<li>使用mongodb(mongoose)管理数据的存取</li>
-<li>使用ES6的基本语法，完成模块化管理</li>
-<li>使用cssModules解决全局污染的问题</li>
-<li>使用webpack开发</li>
+<li>承载用户信息的HTTP首部。<br>可以从From、User-Agent、Referer、Auehorization等首部来将用户的信息在请求的同时发送给服务器作为服务器识别用户的一种方法。</li>
+<li>客户端IP地址跟踪，通过IP地址进行识别。<br>将客户端的IP地址作为一种表示，web服务器可以找到承载HTTP请求的TCP链接另外一端的IP地址。但是它存在比较多的缺陷（限制），比如多用户共享IP地址、防火墙隐藏IP地址、网络服务提供商动态分配IP地址等。</li>
+<li>用户登陆，用认证方式来识别用户。<br>服务器可以要求用户通过用登陆认证来显示的查询用户是谁，可以用www-Authenticate首部和Authorization首部向web站点传送用户相关的信息，但是在当用户需要在多个站点或者跳转到另一个站点的时候需要重新验证，这会大大降低用户的体验。</li>
+<li>胖URL，在URL中嵌入识别信息。<br>这种方式会为每个用户生成特定版本的URL来追踪用户的身份，改动后包含状态信息的URL称之为胖URL，但是它也存在相当大的问题，比如无法共享URL、破坏缓存（为每个用户生成特有的版本意味着不再有可供公共访问的URL需要缓存了）、非持久的（当用户退出登陆时所有的信息都会丢失）。</li>
 </ul>
-</li>
-</ul>
-</blockquote>
+<h3 id="关于cookie"><a href="#关于cookie" class="headerlink" title="关于cookie"></a>关于cookie</h3><p>cookie是识别当前用户，实现持久会话的比较好的方式。Cookie 是在 HTTP协议下，服务器或脚本可以维护客户工作站上信息的一种方式。Cookie 是由 Web服务器保存在用户浏览器（客户端）上的小文本文件，它可以包含有关用户的信息。无论何时用户链接到服务器，Web 站点都可以访问 Cookie 信息。目前有些 Cookie 是临时的（会话cookie），有些则是持续的（持久cookie）。临时的 Cookie只在浏览器上保存一段规定的时间，一旦超过规定的时间，该 Cookie 就会被系统清除。它们之间唯一的区别就是它们的过期时间（利用Expires或Max-Age参数来说明过期时间）。</p>
+<h3 id="cookie的工作流程"><a href="#cookie的工作流程" class="headerlink" title="cookie的工作流程"></a>cookie的工作流程</h3><p>cookie就像是服务器给用户的一个标记，当用户访问一个web站点的时候，这个web站点就可以读取此服务器给用户的所有标记。用户首次访问web站点时是空白的，此时服务器会给此用户一个cookie（以便于自身以后识别此用户），cookie中包含了一个由键值对（名字=值）这样的信息构成的列表，并且通过Set-Cookie或者Set-Cookie2 HTTP响应首部将其贴到用户身上，同时会向首部添加一个Domain属性来控制哪些站点可以看到这个cookie。浏览器会记住从服务器返回的cookie内容，并将它储存在浏览器的数据库中。当用户再次访问这个站点时，浏览器会挑中响应服务器的缓存发送出去。（不同的站点使用不同的cookie，浏览器只会将对应站点的cookie发送出去）</p>
+<h3 id="cookie的成分与版本"><a href="#cookie的成分与版本" class="headerlink" title="cookie的成分与版本"></a>cookie的成分与版本</h3><p>cookie分为0和1两个版本，0版本是网景公司定义的，它定义了Set-Cookie响应首部和cookie请求首部以及控制cookie的字段。它的Set-Cookie首部有如下主要字段。</p>
 <ul>
-<li>数据与决策工程重点实验室网站（2016.6）<a href="https://github.com/cqupt-yifanwu/Lab" target="_blank" rel="external">https://github.com/cqupt-yifanwu/Lab</a></li>
+<li>NAME = VALUE ，强制的，这个列表会发送给服务器。</li>
+<li>Expires，可选的，这个属性指定一个日期来定义cookie的实际生存日期。</li>
+<li>Domain，可选的。浏览器只向指定域中的服务器发送此cookie。<br>版本一引入了Set-Cookie2和Cookie2首部，但它也能与版本0系统互相操作，他做了如下的主要改动。</li>
+<li>为每个cookie关联上解释文本</li>
+<li>允许在浏览器退出时不考虑时间强制销毁</li>
+<li>用相对秒数来表示cookie的声明期而非绝对时间</li>
+<li>通过端口号，而不仅仅是域和路径来控制</li>
 </ul>
-<blockquote>
+<h3 id="cookie与缓存"><a href="#cookie与缓存" class="headerlink" title="cookie与缓存"></a>cookie与缓存</h3><p>这一部分待扩充。</p>
 <ul>
-<li>作为项目小组的领导者和主要开发人员，该网站是一个展示实验室信息动态的网站，提供管理者上传资料、管理实验室项目动态等功能（共计11个页面）。<ul>
-<li>使用原生javascript动画和分页等功能和效果。</li>
-<li>使用Aajx和JSON与后台进行数据的交互和信息验证。</li>
-<li>使用requireJs实现模块化</li>
-<li>使用git来实现版本控制</li>
+<li>如果无法缓存文档要将其标识出来</li>
+<li>缓存Set-Cookie首部时要小心</li>
+<li>小心处理带有cookie首部的请求 </li>
 </ul>
-</li>
-</ul>
-</blockquote>
+<h3 id="cookie-in-javascript"><a href="#cookie-in-javascript" class="headerlink" title="cookie in javascript"></a>cookie in javascript</h3><p>javascript是运行在客户端的脚本，因此一般是不能设置session因为session是在服务器端运行的，而cookie是在客户端的，我们来看看在javascript中对cookie的操作。</p>
 <ul>
-<li>实验室网站维护及功能完善 （2016.3）</li>
+<li>设置cookie<br><code>document.cookie=&quot;name&quot;+value;</code></li>
+<li>读取cookie<br><code>document.cookie.split(&quot;;&quot;);</code><br>会得到一个数组。</li>
+<li>设置时间<br>通过这是expires属性来设置这个cookie的有效期</li>
+<li>利用jquery库来操作cookie<br><code>$.cookie(&#39;the_cookie&#39;, &#39;the_value&#39;, { expires: 7, path: &#39;/&#39; }); 
+$.cookie(&#39;the_cookie&#39;);</code></li>
 </ul>
-<blockquote>
-<p>参与维护学院实验室网站，并且添加密码保护弹出框功能，使用ajax与后台交互完成密保问题的添加与修改等。在此期间个人技术得到一定的提升，熟悉了前后端交互的流程，得到了老师的肯定。</p>
-</blockquote>
-<h3 id="校园经历"><a href="#校园经历" class="headerlink" title="校园经历"></a>校园经历</h3><ul>
-<li>校级三等奖学金</li>
-<li>校级科技创新先进个人</li>
-<li>“创新创意创业”大赛省部级三等奖</li>
-<li>数学建模比赛校二等奖</li>
-<li>第十届大学生创业大赛二等奖</li>
-<li>院学生会学习部部长</li>
-<li>极客网工作室核心成员</li>
+<h3 id="session、localstorage和sessionstorage与cookie的区别"><a href="#session、localstorage和sessionstorage与cookie的区别" class="headerlink" title="session、localstorage和sessionstorage与cookie的区别"></a>session、localstorage和sessionstorage与cookie的区别</h3><ul>
+<li>session<br>cookie和session都是用来跟踪浏览器用户身份的会话方式，但是他们有很大的区别，cookie保存在客户端而session保存运行在服务端，当web服务器用的是session那么所有的数据都保存在服务器上，客户端每次请求的时候会发送当前会话的sessionid（是服务器和客户端链接时候随机分配的），服务器根据sessionid判断响应的用户数据标治，所以说session的生命周期在关闭浏览器之前存在。不同的是cookie在客户端存在只要不关闭浏览器cookie一直有效，如果设置了有效时间，cookie会保存在客户端的硬盘上，下次再访问该网站的时候，浏览器先检查有没有cookie，如果有的话，就读取该cookie，然后发送给服务器。<strong>安全性</strong>方面cookie不如session，别人可以分析放在本地的cookie并进行欺骗，此时服务器可能还认为cookie是合法的。</li>
+<li>localstorage<br>localStorage 是 HTML5 标准中新加入的技术，除非被清除，否则永久保存，仅在客户端（即浏览器）中保存，不参与和服务器的通信，源生接口可以接受，亦可再次封装来对Object和Array有更好的支持， localStorage 接替了 Cookie 管理购物车的工作，同时也能胜任其他一些工作。比如HTML5游戏通常会产生一些本地数据，localStorage 也是非常适用的。</li>
+<li>sessionstorage<br>sessionStorage 与 localStorage 的接口类似，但保存数据的生命周期与 localStorage 不同。做过后端开发的同学应该知道 Session 这个词的意思，直译过来是“会话”。而 sessionStorage 是一个前端的概念，它只是可以将一部分数据在当前会话中保存下来，刷新页面数据依旧存在。但当页面关闭后，sessionStorage 中的数据就会被清空。仅在客户端（即浏览器）中保存，不参与和服务器的通信。如果遇到一些内容特别多的表单，为了优化用户体验，我们可能要把表单页面拆分成多个子页面，然后按步骤引导用户填写。这时候 sessionStorage 的作用就发挥出来了。**注意：localstorage和sessionstorage与cookie都存在与客户端，他们都有可能存在XSS（跨站脚本攻击）的风险。</li>
 </ul>
-<h3 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h3><ul>
-<li>自学能力较强，热爱前端，拥抱变化</li>
-<li>爱好游泳跑步敲代码</li>
-</ul>
-<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>感谢前辈花时间阅读我的简历，期待能有机会和您共事。</p>
 
 	
 	
@@ -423,7 +415,7 @@
                       
 <section id="comment">  
  <!-- 多说评论框 start -->  
-<div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://itbirds1900.github.io/http://jiaoguibin.top/about/index.html"></div>  
+<div class="ds-thread" data-thread-key="2017/01/24/HTTP-Cookie/" data-title="HTTP-Cookie" data-url="http://itbirds1900.github.io/http://jiaoguibin.top/2017/01/24/HTTP-Cookie/"></div>  
 <!-- 多说评论框 end -->  
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
 <script type="text/javascript">  
@@ -453,6 +445,14 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2017/01/16/HTTP-缓存/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
         </div>
@@ -629,6 +629,13 @@ It will not impact the appearance and can give developers a lot of support :)
 
 				
 				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 				
 				
 				<!--Footer-->
