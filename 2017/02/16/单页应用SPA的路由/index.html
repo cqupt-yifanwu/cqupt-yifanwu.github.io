@@ -10,7 +10,7 @@
     <!-- Title -->
     
     <title>
-        归档: 2017 | jiaoguibin&#39;s blog
+        单页应用SPA的路由 | jiaoguibin&#39;s blog
     </title>
     
     <!-- Favicons -->
@@ -46,7 +46,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://jiaoguibin.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017 | jiaoguibin&#39;s blog">
+    <meta property="og:title" content="单页应用SPA的路由 | jiaoguibin&#39;s blog">
     <meta property="og:description" content="hello world">
     
      <!--[if lte IE 9]>
@@ -195,482 +195,255 @@
                 </button>
 				
 				
-                <!-- Index Module -->
-<div class="material-index mdl-grid">
-	
-    <div class="locate-thumbnail-symbol"></div>
+                <!-- Post TOC -->
+
     
-    
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于单页应用"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于单页应用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#单页应用的实现"><span class="post-toc-number">2.</span> <span class="post-toc-text">单页应用的实现</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实现改变URL页面不刷新"><span class="post-toc-number">3.</span> <span class="post-toc-text">实现改变URL页面不刷新</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#监听URL的变化，执行页面替换逻辑"><span class="post-toc-number">4.</span> <span class="post-toc-text">监听URL的变化，执行页面替换逻辑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#两种实现的比较"><span class="post-toc-number">5.</span> <span class="post-toc-text">两种实现的比较</span></a></li></ol>
 		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/02/16/单页应用SPA的路由/">单页应用SPA的路由</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            关于单页应...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/16/单页应用SPA的路由/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>2月 16, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/02/16/单页应用SPA的路由/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/02/15/网络爬虫与搜索引擎优化-SEO/">网络爬虫与搜索引擎优化(SEO)</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            爬虫...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/15/网络爬虫与搜索引擎优化-SEO/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>2月 15, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/02/15/网络爬虫与搜索引擎优化-SEO/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/02/03/web开发的性能准则（减少页面加载时间方面）/">web开发的性能准则（减少页面加载时间方面）</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            准则（概述...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/03/web开发的性能准则（减少页面加载时间方面）/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>2月 03, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/02/03/web开发的性能准则（减少页面加载时间方面）/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/01/24/HTTP-Cookie/">HTTP-Cookie</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            用户...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/01/24/HTTP-Cookie/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>1月 24, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/01/24/HTTP-Cookie/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/01/16/HTTP-缓存/">HTTP--缓存</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            关于缓存
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/01/16/HTTP-缓存/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>1月 16, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/01/16/HTTP-缓存/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/01/08/搭建gighub时hexo-deploy操作出现的一些问题/">搭建gighub时hexo deploy操作出现的一些问题</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            github+hexo是一个很火的博客搭建方法，当然网络上的教程也是数不胜数，在这里就不多赘述，如果有需要可以
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/01/08/搭建gighub时hexo-deploy操作出现的一些问题/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>1月 08, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/01/08/搭建gighub时hexo-deploy操作出现的一些问题/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2017/01/05/hello-world/">Hello World</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/01/05/hello-world/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
-            </div>
-            <div>
-                <strong>Jiaoguibin</strong>
-                <span>1月 05, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="2017/01/05/hello-world/" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-    
-	
-		<script>
+				<script>
     
     var randomNum;
+    randomNum = Math.floor(Math.random() * 19 + 1);
     
-    var locatePost = $(".locate-thumbnail-symbol").next();
-    for(var i=0; i < 10; i++){
-        
-        randomNum = Math.floor(Math.random() * 19 + 1);
-        
-        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')')
-        
-        locatePost = locatePost.next();
-    }
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
     
 </script>
 
+		
+	
+        <p class="article-headline-p">
+            单页应用SPA的路由
+        </p>
+    </div>
+
 	
 
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Jiaoguibin</strong>
+        <span>2月 16, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+
+    <!-- Qrcode -->
+    
+
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=单页应用SPA的路由&url=http://jiaoguibin.top//2017/02/16/单页应用SPA的路由/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://jiaoguibin.top//2017/02/16/单页应用SPA的路由/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://jiaoguibin.top//2017/02/16/单页应用SPA的路由/index.html&title=单页应用SPA的路由" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 LinkedIn
+        </li>
+    </a>
+    
+
+    <!-- Share QQ -->
+    
+    <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=jiaoguibin&#39;s blog&title=单页应用SPA的路由&summary=hello world&pics=http://jiaoguibin.top/img/icon.png&url=http://jiaoguibin.top/2017/02/16/单页应用SPA的路由/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 QQ
+        </li>
+    </a>
+    
+
+    <!-- Share Telegram -->
+    
+    <a class="post_share-link" href="https://telegram.me/share/url?url=http://jiaoguibin.top/2017/02/16/单页应用SPA的路由/index.html&text=单页应用SPA的路由" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Telegram
+        </li>
+    </a>
+    
+</ul>
+
 </div>
+
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h3 id="关于单页应用"><a href="#关于单页应用" class="headerlink" title="关于单页应用"></a>关于单页应用</h3><p>单页Web应用（single page web application，SPA），就是只有一张Web页面的应用，是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。简单来说就是用户只需要加载一次页面就可以不再请求，当点击其他子页面时只会有相应的URL改变而不会重新加载。</p>
+<h3 id="单页应用的实现"><a href="#单页应用的实现" class="headerlink" title="单页应用的实现"></a>单页应用的实现</h3><p>如果你的项目涉及到单页面的话，路由是必不可少的。从上面的介绍中可以知道单页应用的实现依赖与路由，在这里我们可以将上面路由的过程分为两部分：</p>
+<ol>
+<li>更新URL页面不刷新<br>ps: 之前面试被问到过这个问题，现在才恍然大悟面试官大大想要问的是这个点。 ==。</li>
+<li>监听URL的变化，执行页面替换逻辑</li>
+</ol>
+<h3 id="实现改变URL页面不刷新"><a href="#实现改变URL页面不刷新" class="headerlink" title="实现改变URL页面不刷新"></a>实现改变URL页面不刷新</h3><p>按照常规的逻辑我们切换URL好像就会跳转网页，但是转念一项锚链接的URL不是也改变了吗？          这里，存在两种满足需求的方式。</p>
+<ul>
+<li>利用URL中的hash方式<br>了解http协议就会知道，url的组成部分有很多，譬如协议、主机名、资源路径、查询字段等等，其中包含一个称之为片段的部分，以“#”为标识。打开控制台，输入 location.hash，你可以得到当前url的hash部分（如果当前url不存在hash则返回空字符串）。接下来，输入 location.hash = ‘123’，会发现浏览器地址栏的url变了，末尾增加了’#123’字段，并且，页面没有被重新刷新。很显然，这很符合我们的要求。<ul>
+<li>利用H5的history API<br>html5引入了一个history对象，包含了一套访问浏览器历史的api，可以通过window.history访问到它。 HTML5 History API包括2个方法：history.pushState()和history.replaceState()，和1个事件：window.onpopstate。这两个方法都是对浏览器的历史栈进行操作，将传递的url和相关数据压栈，并将浏览器地址栏的url替换成传入的url且不刷新页面，而且他们的参数也相同，第一个参数用于存储该url对应的状态对象，该对象可在onpopstate事件中获取，也可在history对象中获取。第二个参数是标题，目前浏览器并未实现。第三个参数则是设定的url。一般设置为相对路径，如果设置为绝对路径时需要保证同源。。不同的是pushState 将指定的url直接压入历史记录栈顶，而 replaceState 是将当前历史记录栈顶替换成传入的数据。不过低版本对history AIP的兼容性不是很好。</li>
+</ul>
+</li>
+</ul>
+<h3 id="监听URL的变化，执行页面替换逻辑"><a href="#监听URL的变化，执行页面替换逻辑" class="headerlink" title="监听URL的变化，执行页面替换逻辑"></a>监听URL的变化，执行页面替换逻辑</h3><ol>
+<li>对于hash方式，我们通常采用监听hashchange事件，在事件回调中处理相应的页面视图展示等逻辑。在不支持hashchange事件的浏览器中，我们只能通过setInterval设置来模拟hashchange（不停的对比URL如果有改变）。<br>`<br>var oldHash = location.hash;<br>var oldURL = location.href;<br>setInterval (function () {<br>var newHash = location.hash;<br>var newURL = location.herf;<br>if (newHash !== oldHash &amp;&amp; typeof window.onhashchange === ‘function’) {<pre><code>// 这里执行onhashchange的回调
+</code></pre>}<br>}, 100)<br>`</li>
+<li>采用history API的形式时，需要触发onpopstate，popstate 事件只会在浏览器某些行为下触发, 比如点击后退按钮（或者在JavaScript中调用 history.back() 方法）。这也就是说，我们在使用history API改变浏览器的url时，仍需要额外的步骤去触发 popstate 事件，例如调用 history.back() 会 history.forward() 等方法</li>
+</ol>
+<h3 id="两种实现的比较"><a href="#两种实现的比较" class="headerlink" title="两种实现的比较"></a>两种实现的比较</h3><p>总的来说，基于Hash的路由，兼容性更好；基于History API的路由，更加直观和正式。但是，有一点很大的区别是，基于Hash的路由不需要对服务器做改动，基于History API的路由需要对服务器做一些改造。</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+                      
+<section id="comment">  
+ <!-- 多说评论框 start -->  
+<div class="ds-thread" data-thread-key="2017/02/16/单页应用SPA的路由/" data-title="单页应用SPA的路由" data-url="http://itbirds1900.github.io/http://jiaoguibin.top/2017/02/16/单页应用SPA的路由/"></div>  
+<!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
+<script type="text/javascript">  
+    var duoshuoQuery = {short_name:"itmyhome1900"};  
+        (function() {  
+            var ds = document.createElement('script');  
+            ds.type = 'text/javascript';ds.async = true;  
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
+            ds.charset = 'UTF-8';  
+            (document.getElementsByTagName('head')[0]   
+             || document.getElementsByTagName('body')[0]).appendChild(ds);  
+        })();  
+</script>  
+<!-- 多说公共JS代码 end -->  
+</section>  
+  
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/02/15/网络爬虫与搜索引擎优化-SEO/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
 				
 				
