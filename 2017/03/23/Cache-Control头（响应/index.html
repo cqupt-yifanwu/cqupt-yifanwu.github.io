@@ -390,7 +390,8 @@
 <li>本地缓存一小时，CDN上缓存2小时；</li>
 <li>本地和CDN均被缓存一小时，但是如果CDN收到请求，则尽管已经缓存了一小时，还是要检查源中文档是否已经被改变。</li>
 </ol>
-<h5 id="关于请求头中的Cache-Control"><a href="#关于请求头中的Cache-Control" class="headerlink" title="关于请求头中的Cache-Control"></a>关于请求头中的Cache-Control</h5><p>待补充！</p>
+<h5 id="关于请求头中的Cache-Control"><a href="#关于请求头中的Cache-Control" class="headerlink" title="关于请求头中的Cache-Control"></a>关于请求头中的Cache-Control</h5><p>cache-Control不是响应头独有的，在有些请求头中会带有Cache-Control，但是我们为什么很少在请求头中见到这个呢？（也很少见到这方面的资料）原因就是：<strong>他非常的危险！</strong></p>
+<p>我们知道，HTTP中的PUT方法是具有很大的风险性的，因为它有可能使服务端的资源被不安全的客户端修改，请求中的Cache-Control也是一样，来跟我仔细思考：前面说到CDN是为了加快访问同时减轻服务器的压力，甚至是保护底层的数据库，那么试想，如果客户端利用Cache-Control强行的关闭掉CDN直接把请求发送到服务器上，此时攻击者就可与击穿CDN！所以说他具有很大的风险性，实现这个规范的服务器少之又少!</p>
 
 	
 	
