@@ -10,7 +10,7 @@
     <!-- Title -->
     
     <title>
-        HTTP--缓存 | jiaoguibin&#39;s blog
+        归档: 2017/4 | jiaoguibin&#39;s blog
     </title>
     
     <!-- Favicons -->
@@ -46,7 +46,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://jiaoguibin.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="HTTP--缓存 | jiaoguibin&#39;s blog">
+    <meta property="og:title" content="归档: 2017/4 | jiaoguibin&#39;s blog">
     <meta property="og:description" content="hello world">
     
      <!--[if lte IE 9]>
@@ -195,308 +195,98 @@
                 </button>
 				
 				
-                <!-- Post TOC -->
-
+                <!-- Index Module -->
+<div class="material-index mdl-grid">
+	
+    <div class="locate-thumbnail-symbol"></div>
     
-	<!-- Back Button -->
-<!--
-	<div class="material-back" id="backhome-div" tabindex="0">
-		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
-			<i class="material-icons" role="presentation">arrow_back</i>
-			<span class="mdl-button__ripple-container">
-				<span class="mdl-ripple"></span>
-			</span>
-		</a>
-	</div>			
--->
-	<!-- Left aligned menu below button -->
-	<button id="post-toc-trigger-btn"
-			class="mdl-button mdl-js-button mdl-button--icon">
-	  <i class="material-icons">format_list_numbered</i>
-	</button>
-
-	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-		for="post-toc-trigger-btn">
-			
-			<ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于缓存"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于缓存</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#缓存的处理步骤"><span class="post-toc-number">2.</span> <span class="post-toc-text">缓存的处理步骤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设置缓存控制"><span class="post-toc-number">3.</span> <span class="post-toc-text">设置缓存控制</span></a></li></ol>
+    
 		
-<!--			<li class="mdl-menu__item">Some Action</li>-->
-	</ul>
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-		
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-	<!-- Paradox Post Header -->
+			<!-- Paradox Thumbnail -->
+        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-				<script>
+		
+	
+				
+		<!-- Post Title -->
+		<p class="article-headline-p"><a href="/2017/04/01/工具-gulp/">工具--gulp</a></p>
+	</div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            关于Gul...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/04/01/工具-gulp/" target="_self">继续阅读</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Jiaoguibin's avatar">
+            </div>
+            <div>
+                <strong>Jiaoguibin</strong>
+                <span>4月 01, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                
+            </span>
+            
+            
+                <!-- Comment Number -->
+                &nbsp;|&nbsp;
+                <span class="post_entry-comment" >
+                        <span class="ds-thread-count" data-thread-key="2017/04/01/工具-gulp/" data-count-type="comments"></span>
+                </span>
+            
+            
+            <!-- Post Views -->
+            <span class="post_entry-views">
+                
+            </span>
+        </div>
+    </div>
+            
+</div>
+
+		
+		
+    
+    
+	
+		<script>
     
     var randomNum;
-    randomNum = Math.floor(Math.random() * 19 + 1);
     
-    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+    var locatePost = $(".locate-thumbnail-symbol").next();
+    for(var i=0; i < 10; i++){
+        
+        randomNum = Math.floor(Math.random() * 19 + 1);
+        
+        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')')
+        
+        locatePost = locatePost.next();
+    }
     
 </script>
 
-		
 	
-        <p class="article-headline-p">
-            HTTP--缓存
-        </p>
-    </div>
-
-	
-
-				
-				
-					<!-- Paradox Post Info -->
-					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/touxiang.jpg" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Jiaoguibin</strong>
-        <span>1月 16, 2017</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-<!--
-    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-        <i class="material-icons" role="presentation">favorite</i>
-        <span class="visuallyhidden">favorites</span>
-    </button>
--->
-
-    <!-- Qrcode -->
-    
-
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HTTP--缓存&url=http://jiaoguibin.top//2017/01/16/HTTP-缓存/index.html&pic=&searchPic=false&style=simple" target="_blank">
-        <li class="mdl-menu__item">
-            分享到微博
-        </li>
-    </a>
-    
-
-    <!-- Share Twitter -->
-    
-
-    <!-- Share Facebook -->
-    
-
-    <!-- Share Google+ -->
-    
-    <a class="post_share-link" href="https://plus.google.com/share?url=http://jiaoguibin.top//2017/01/16/HTTP-缓存/index.html" target="_blank">
-        <li class="mdl-menu__item">
-            分享到 Google+
-        </li>
-    </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-    <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://jiaoguibin.top//2017/01/16/HTTP-缓存/index.html&title=HTTP--缓存" target="_blank">
-        <li class="mdl-menu__item">
-            分享到 LinkedIn
-        </li>
-    </a>
-    
-
-    <!-- Share QQ -->
-    
-    <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=jiaoguibin&#39;s blog&title=HTTP--缓存&summary=hello world&pics=http://jiaoguibin.top/img/icon.png&url=http://jiaoguibin.top/2017/01/16/HTTP-缓存/index.html" target="_blank">
-        <li class="mdl-menu__item">
-            分享到 QQ
-        </li>
-    </a>
-    
-
-    <!-- Share Telegram -->
-    
-    <a class="post_share-link" href="https://telegram.me/share/url?url=http://jiaoguibin.top/2017/01/16/HTTP-缓存/index.html&text=HTTP--缓存" target="_blank">
-        <li class="mdl-menu__item">
-            分享到 Telegram
-        </li>
-    </a>
-    
-</ul>
 
 </div>
-
-				
-
-                <!-- Post Content -->
-                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-	
-		<h3 id="关于缓存"><a href="#关于缓存" class="headerlink" title="关于缓存"></a>关于缓存</h3><ul>
-<li><p>什么是缓存<br>缓存这个东西真的是无处不在， 有浏览器端的缓存， 有服务器端的缓存，有代理服务器的缓存， 有ASP.NET页面缓存，对象缓存。 数据库也有缓存， 等等。http中具有缓存功能的是浏览器缓存，以及缓存代理服务器。http缓存的是指:当Web请求抵达缓存时， 如果本地有“已缓存的”副本，就可以从本地存储设备而不是从原始服务器中提取这个文档</p>
-</li>
-<li><p>为什么要使用缓存</p>
-<ol>
-<li>缓存减少了冗余的数据传输，不仅减少了用于流量的费用，还节约了用户的时间。</li>
-<li>减轻了服务器的负担，有效的缓存可以可以不需要服务器再重新发送，大大提高了网站的性能。</li>
-<li>缓解了网络带宽的问题，不需要更多的带宽就可以更快的加载页面。</li>
-<li>降低了距离时延，因为在信息的传播中，距离越长时延越大，缓存可能存在本地或者较近的（代理）服务器上，不需要更远的距离去请求。</li>
-</ol>
-<ul>
-<li>缓存的种类</li>
-</ul>
-<ol>
-<li><p>私有缓存<br>专用的缓存被称为私有缓存，它不需要很大的动力或者存储空空间，这样就可以做的很小，比较便宜。我们的web浏览器中就有私有内存，它们大多都存在我们电脑的个人磁盘和内存中，并且允许设置大小等。<strong>在浏览器的地址输入框和直接F5刷新采用的是不同的机制，前者会查看是否有有效的缓存，有效的缓存会组织请求流向原始服务器，后者会直接询问原始服务器，验证更变</strong></p>
-</li>
-<li><p>公有缓存<br>公有缓存是特殊的共享代理服务器，它会接收来自多个用户的访问，代理缓存会从本地的缓存中提供文档，对于流行的对象缓存只需要取一次就可以了，它会用共享的副本为所有的请求服务，以降低网络的流量。</p>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="缓存的处理步骤"><a href="#缓存的处理步骤" class="headerlink" title="缓存的处理步骤"></a>缓存的处理步骤</h3><ol>
-<li><p>接收<br>缓存从网络中读取抵达的请求报文</p>
-</li>
-<li><p>解析<br>缓存对报文进行解析，提取URL和各种首部。</p>
-</li>
-<li><p>查找<br>缓存查看是否有本地副本可用，如果没有，就获取一份副本（并将其保存到本地）。</p>
-<p>缓存无法保存世界上的每份文档，当可以用已有的副本为某些到达缓存的请求提供服务时成为缓存命中，从而衍生出缓存命中率和字节命中率等概念。其他一些到达缓存的请求可能会由于没有副本可用被转发给原始的服务器，这称为未命中。<br><em>再验证</em>：原始服务器的内容很可能发生变化（下面的新鲜度检测会详细讲解）缓存要不时的对其进行检测，这个过程并不需要从服务器获取整个对象，就可以快速检测。在项目的开发中也有可能因为缓存的问题使我们原本的改动无法呈现。</p>
-</li>
-<li><p>新鲜度检测<br>缓存查看已缓存副本是否足够新鲜，如果不是，就询问服务器是否有任何更新。（首部自身都可以强制缓存的验证）</p>
-<ul>
-<li>文档过期，通过特殊的HTTP Cache-Control首部和Expires首部，来标记文档的“保质期”。</li>
-<li>服务器再验证<br>仅仅是已缓存文件过期了并不意味着它和原始服务器上目前处于活跃状态的文档有实际的区别，只是说到了要审核的时间了，说明缓存需要访问原始服务器是否发生了变化。如果发生了变化，缓存会获取一份新的文档副本，并且将其存到旧的文档的位置上；如果没有发生变化，缓存只需要获取新的首部，包括一个新的过期日期，并对缓存中的首部进行更新。</li>
-<li>用条件方法进行验证<ol>
-<li>If-Modified-Since:Data  <blockquote>
-<p>指定日期或者时间，如果从指定日期之后文档修改过了就执行请求方法。可以与Last-Modofied服务器响应首部配合使用，只有内容在被修改过以后与已缓存版本有所不同时才会获取内容（注意：这里不一定是以后而是有不同就获取）。如果“过期”通常GET就会执行成功，携带新首部的文档会被返回给缓存；如果“未过期”则只返回一个新的过期日期。</p>
-</blockquote>
-</li>
-<li>If-None-Match:实体标签再验证<br>与上面不同，这个方法是通过一个额外的标签来识别版本（附加到文档上的任意标签或者引用字符串），因为在某些情况下仅仅使用上面的方法是不够的，例如：有些文档会周期性的修改但是包含的数据是一样的，有些数据可能被修改了但是这个修改并不是很重要；有些服务器无法获取到修改时间等。</li>
-<li>弱验证器</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>创建响应<br>缓存会用新的首部和已缓存的主题来构建一条响应报文。</li>
-<li>发送<br>缓存通过网络将响应发回客户端</li>
-<li>日志<br>缓存可选地创建一个日志文件条目来描述这个事务。</li>
-</ol>
-<h3 id="设置缓存控制"><a href="#设置缓存控制" class="headerlink" title="设置缓存控制"></a>设置缓存控制</h3><p>不同的web服务器为HTTP Cache-control 和 Expiration 首部的设置提供了一些不同的机制</p>
-<ol>
-<li>控制Apache的HTTP首部<br>Apache Web 服务器提供了几种设置HTTP缓存控制首部的机制，其中很多机制需要人为启动。<ol>
-<li>mod_headers<br>通过这个模块可以单独对首部进行设置(设置单个HTTP首部指令来扩充Apache的配置文件)，下面是将文件都标识为非缓存的实例：<br><code>&lt;Files *.html&gt;
-Header set Cache-control on-cache
-&lt;/Files&gt;</code></li>
-<li>mod_expries<br>它提供的程序逻辑可以自动生成带有正确过期日期的Expires首部，通过模块为文件设置过期日期和缓存能力。</li>
-<li>mod_cern_meta</li>
-</ol>
-</li>
-<li>通过HTTP-EQUIV控制HTML缓存<br>HTTP服务器响应首部用于会送文档的到期信息以及缓存控制信息，web服务器与配置文件进行交互，为所提供的文档分配正确的Cache-Control首部。<br>为了让作者无需与web服务器的配置文件进行交互的情况下HTML2.0定义了<meta http-equiv="">标签<br><code>&lt;Html&gt;
-&lt;head&gt;
-&lt;META HTTP-EQUIV=&quot;Cache-Control&quot; CONTENT=&quot;cache&quot;&gt;
-&lt;/head&gt;    
-&lt;/Html&gt;</code><br>但是支持这个可能给服务器增加额外的负担，所以通过配置正确的服务器发出HTTP首部是传送文档缓存控制的唯一可靠的方法.</li>
-</ol>
-
-	
-	
-	
-	
-</div>
-				
-				
-
-                <!-- Post Comments -->
-                
-                      
-<section id="comment">  
- <!-- 多说评论框 start -->  
-<div class="ds-thread" data-thread-key="2017/01/16/HTTP-缓存/" data-title="HTTP--缓存" data-url="http://itbirds1900.github.io/http://jiaoguibin.top/2017/01/16/HTTP-缓存/"></div>  
-<!-- 多说评论框 end -->  
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
-<script type="text/javascript">  
-    var duoshuoQuery = {short_name:"itmyhome1900"};  
-        (function() {  
-            var ds = document.createElement('script');  
-            ds.type = 'text/javascript';ds.async = true;  
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
-            ds.charset = 'UTF-8';  
-            (document.getElementsByTagName('head')[0]   
-             || document.getElementsByTagName('body')[0]).appendChild(ds);  
-        })();  
-</script>  
-<!-- 多说公共JS代码 end -->  
-</section>  
-  
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    
-    <!-- Prev Nav -->
-    
-        <a href="/2017/01/24/HTTP-Cookie/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2017/01/08/搭建gighub时hexo-deploy操作出现的一些问题/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-        </div>
-    </div>
 
 				
 				
